@@ -23,7 +23,7 @@ app.get('/data', function(req, res) {
 app.post('/data', function(req, res) {
     var dataSegment = req.body;
     console.log(req.body);
-    data.push(data);
+    data.push(dataSegment);
     res.status(200).send("Successfully posted dataSegment");
 });
 
